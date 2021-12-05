@@ -1,0 +1,41 @@
+.mobile-nav {
+  display: none;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  padding: 40px 15px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav__list {
+  font-size: 22px;
+}
+
+.mobile-nav__list a:hover {
+  color: #01996D;
+}
+
+.mobile-nav__list li + li {
+  margin-top: 20px;
+}
+
+.mobile-nav__login {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.mobile-nav__login > * {
+  margin-left: 30px;
+}

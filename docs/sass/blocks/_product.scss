@@ -1,0 +1,150 @@
+.product {
+  padding-top: 120px;
+  padding-bottom: 168px;
+
+  @media (max-width: 575px) {
+    padding-bottom: 87px;
+  }
+}
+
+.product__row {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 575px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.product__wrapper {
+  position: relative;
+  margin-right: 86px;
+  padding-left: 60px;
+  padding-bottom: 74px;
+
+  @media (max-width: 1199px) {
+    margin-right: 43px;
+  }
+
+  @media (max-width: 991px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: 575px) {
+    margin-right: 0;
+  }
+}
+
+.product__card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  @media (max-width: 1199px) {
+    bottom: -42px;
+  }
+
+  @media (max-width: 991px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 767px) {
+    bottom: 0;
+  }
+
+  @media (max-width: 575px) {
+    left: 50%;
+    bottom: -65px;
+  }
+}
+
+.product__img {
+  border-radius: 18px;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 584px;  
+
+  @media (max-width: 1399px) {
+    max-width: 490px;
+  }
+
+  @media (max-width: 575px) {    
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.product__content__wrapper {
+  @media (max-width: 575px) {
+    max-width: 288px;
+  }
+}
+
+.product__content__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+
+  @media (max-width: 1399px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+}
+
+.product__content__title + * {
+  margin-top: 10px;
+}
+
+.product__content__subtitle {
+  font-family: 'Georgia', serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 157%;
+  color: #01996D;
+
+  @media (max-width: 1399px) {
+    font-size: 42px;
+    line-height: 130%;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 575px) {
+    max-width: 280px;
+    font-size: 24px;
+  }
+}
+
+.product__content__text {
+  max-width: 530px;
+  margin-top: 20px;
+  line-height: 145%;
+
+  @media (max-width: 575px) {
+    max-width: 262px;
+  }
+}
+
+.product__content__text p {
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+}
+
+.product__content__text + * {
+  margin-top: 40px;
+}
+.product__content__button {
+  display: flex;
+}
