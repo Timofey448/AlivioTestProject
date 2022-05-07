@@ -14,17 +14,6 @@ body {
 .no-scroll {
   overflow: hidden; }
 
-.visually-hidden {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  display: block;
-  margin-left: -10000px;
-  background: transparent;
-  font-size: 0; }
-
 .container {
   width: 1400px;
   padding-left: 15px;
@@ -71,12 +60,9 @@ img, svg {
   max-width: 100%;
   height: auto; }
 
-input, textarea, button, select {
+button {
   font-family: inherit;
   font-size: inherit; }
-
-input::-ms-clear {
-  display: none; }
 
 button::-moz-focus-inner {
   padding: 0;
@@ -89,15 +75,11 @@ button, input[type="submit"] {
   background: none;
   cursor: pointer; }
 
-input:focus, input:active,
 button:focus, button:active {
   outline: none; }
 
 label {
   cursor: pointer; }
-
-legend {
-  display: block; }
 
 .header {
   padding-top: 17px;
@@ -132,7 +114,7 @@ legend {
       margin-right: 50px; } }
 
 .header__nav a {
-  transition: color0 0.2s ease-in; }
+  transition: color 0.2s ease-in; }
 
 .header__nav a:hover {
   color: #01996D; }
@@ -882,5 +864,3 @@ legend {
   height: 100%;
   object-fit: cover;
   border-radius: 8px; }
-
-/*# sourceMappingURL=main.css.map */
